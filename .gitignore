@@ -1,0 +1,6 @@
+.env
+config/risk.yaml
+data/*
+!data/.gitkeep
+KILL
+__pycache__/
