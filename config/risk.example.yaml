@@ -2,8 +2,10 @@
 mode: sim            # only "sim" is accepted. Any other value aborts startup.
 instrument: MYM
 account_must_match: "Sim"   # account name must contain this, else refuse to start
-max_risk_per_trade_pct: 1.0
-max_daily_loss_pct: 3.0
-max_open_trades: 1
-trade_window_et: ["08:00", "16:00"]   # placeholder, Sean to confirm
+max_risk_per_trade_pct: 1.0    # confirmed by Sean
+max_daily_loss_pct: 3.0       # confirmed by Sean
+max_open_trades: 1             # PLACEHOLDER
+trade_window_et: ["09:45", "16:00"]   # start confirmed, end is PLACEHOLDER
+breakeven_at_r: 1.0              # confirmed by Sean
+target_r: 2.0                    # Sean preferred, see intake
 kill_switch_file: ./KILL              # if this file exists, flatten and halt

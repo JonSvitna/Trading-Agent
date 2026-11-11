@@ -73,3 +73,25 @@ Source: a summary of earlier chats, pasted by Sean. "UNRESOLVED" means the earli
 - UNRESOLVED: max daily loss, max concurrent trades, measured win rate, realized average R.
 - UNRESOLVED: 3 to 4 dated, annotated example trades (needed to validate the engine).
 
+
+## Sean's answers, 2026-11-11 (round 2)
+
+Confirmed:
+- Risk per trade: **1%**.
+- Max daily loss: **3%**.
+- Sweep rule: a sweep counts only when the candle **closes beyond** the 4H high/low (wick alone is not enough).
+- **88.6** is not an entry level. It is where price usually reverses or reacts. Take profit there, or exit on a CHoCH (change of character).
+- **Breakeven after 1R.**
+- Trade only after **9:45am ET**, but always anchored to the 4H candle.
+
+Placeholders used until Sean corrects them (flagged in code as PLACEHOLDER):
+- Max open trades: 1.
+- Swing = 3 candles each side on 4H.
+- Stop buffer: small fixed number of points beyond the structure-break candle.
+
+Still unresolved:
+- 88.6 of which leg (the retracement of the move that did the sweep?).
+- CHoCH definition and timeframe (5M, 15M, 1H?).
+- End of trading window (after 9:45 ET start).
+- Whether the exit is "whichever comes first" of 88.6, CHoCH, 2R.
+- Dated example trades.
